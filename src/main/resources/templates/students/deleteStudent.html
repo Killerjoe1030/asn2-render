@@ -35,18 +35,20 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/students/select">Delete Student</a>
                     </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/about.html">About</a>
+                    </li>                    
                   </ul>
                 </div>
               </nav>
             <div class = "row justify-content-center">
                 <div class = "col-md-4">
-                    <h1>SELECT STUDENT TO DELETE</h1>
-                    <ul>
-                        <li th:each="student:${st}">
-                            <a th:text="${student.name}" th:value="${name}" th:href="@{/students/delete/{uid}(uid=${student.uid})}"></a><br>
-                            <!-- <a th:text="${student.name}" id="@{'/students/edit/' + ${student.uid}}" class="user-link"><br>   -->
-                        </li>
-                    </ul>
+                    <h1 class="text-center">SELECT STUDENT TO DELETE</h1>
+                    <div>
+                      <div th:each="student:${st}" class="text-center">
+                        <a class="btn btn-primary" th:text="${student.name}" th:value="${name}" th:href="@{/students/delete/{uid}(uid=${student.uid})}" th:style="'height:50px;width:100px;margin-bottom: 20px;' + 'background-color: '+ ${student.hairColor} + ';'" ></a><br>
+                        </div>
+                    </div>
                 </div>
             </div>
     

@@ -15,12 +15,6 @@
             <!-- Brand -->
             <a class="navbar-brand" style="margin-left:20px">Student Tracker</a>
           
-            <!-- Toggler/collapsibe Button -->
-            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-              <span class="navbar-toggler-icon"></span>
-            </button> -->
-          
-            <!-- Navbar links -->
             <div>
               <ul class="navbar-nav">
                 <li class="nav-item">
@@ -35,6 +29,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/students/select">Delete Student</a>
                 </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/about.html">About</a>
+                </li>                
               </ul>
             </div>
           </nav>
@@ -53,7 +50,7 @@
                   <div class="invalid-feedback">Please fill out this field</div>
                 </div>
                 <div class="mb-3">
-                  <input type="number" id="weight" name="weight" class="form-control form-control-lg" placeholder="Weight" required>
+                  <input type="number" id="weight" name="weight" class="form-control form-control-lg" min="20" placeholder="Weight (in pounds)" required>
                   <div class="valid-feedback">Valid</div>
                   <div class="invalid-feedback">Please fill out this field</div>
                 </div>

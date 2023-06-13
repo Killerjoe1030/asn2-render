@@ -40,6 +40,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/students/select">Delete Student</a>
                 </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/about.html">About</a>
+                </li>                
               </ul>
             </div>
           </nav>
@@ -59,7 +62,7 @@
                   <div class="invalid-feedback">Please fill out this field</div>
                 </div>
                 <div class="mb-3">
-                  <input type="number" id="weight" name="weight" class="form-control form-control-lg" placeholder="Weight" th:value="${student.weight}" required>
+                  <input type="number" id="weight" name="weight" class="form-control form-control-lg" placeholder="Weight (in pounds)" min="20" th:value="${student.weight}" required>
                   <div class="valid-feedback">Valid</div>
                   <div class="invalid-feedback">Please fill out this field</div>
                 </div>
